@@ -39,5 +39,6 @@ export const StudentClass: StudentConstructor =  class StudentClass implements S
   }
 
   workOnHomework() { return 'Currently working'; }
+
   displayName() { return this.firstName; }
 }

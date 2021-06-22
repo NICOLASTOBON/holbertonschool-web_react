@@ -19,15 +19,15 @@ const studentTwo: Student = {
   location: "Los Angeles",
 };
 
-const studentList = [studentOne, studentTwo];
+const studentList: Array<Student> = [studentOne, studentTwo];
 
-const table = document.createElement("table");
+const table: HTMLTableElement = document.createElement("table");
 document.body.appendChild(table);
 
 studentList.forEach((student) => {
-  const newRow = table.insertRow();
-  const newRowFirstName = newRow.insertCell();
-  const newRowLocation = newRow.insertCell();
+  const newRow: HTMLTableRowElement = table.insertRow();
+  const newRowFirstName: HTMLTableDataCellElement = newRow.insertCell();
+  const newRowLocation: HTMLTableDataCellElement = newRow.insertCell();
   newRowFirstName.innerHTML = student.firstName;
   newRowLocation.innerHTML = student.location;
 });

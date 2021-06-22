@@ -39,11 +39,7 @@ export const StudentClass: StudentConstructor =  class StudentClass implements S
     this.lastName = lastName;
   }
 
-  workOnHomework() {
-    return 'Currently workin';
-  }
+  workOnHomework() { return 'Currently working'; }
 
-  displayName() {
-    return this.firstName;
-  }
+  displayName() { return this.firstName; }
 }

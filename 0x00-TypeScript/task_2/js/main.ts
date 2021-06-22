@@ -35,6 +35,6 @@ export function isDirector(employee: Director | Teacher): Boolean {
   return employee instanceof Director;
 }
 
-export function executeWork(employee: Director | Teacher): string {
+export function executeWork(employee: DirectorInterface | TeacherInterface): string {
   return isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks()
 }

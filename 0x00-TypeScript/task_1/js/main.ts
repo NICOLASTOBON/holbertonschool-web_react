@@ -39,11 +39,11 @@ export const StudentClass: StudentConstructor =  class StudentClass implements S
     this.lastName = lastName;
   }
 
-  workOnHomework(): string {
+  workOnHomework() {
     return 'Currently workin';
   }
 
-  displayName(): string {
+  displayName() {
     return this.firstName;
   }
 }

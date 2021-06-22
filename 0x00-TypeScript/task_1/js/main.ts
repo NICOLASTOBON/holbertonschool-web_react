@@ -12,5 +12,5 @@ interface Directors extends Teacher {
 }
 
 export function printTeacher(firstName: string, lastName: string): string {
-  return `${firstName.slice(0, 1)}. ${lastName}`;
+  return `${firstName[0]}. ${lastName}`;
 }

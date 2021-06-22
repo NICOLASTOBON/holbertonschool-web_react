@@ -39,8 +39,9 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
   return isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks()
 }
 
-type Subjects = 'Math' | 'History'
+type Subjects = 'Math' | 'History';
 
 export function teachClass(todayClass: Subjects): string {
-  return todayClass === 'Math' ? 'Teaching Math' : 'Teaching History'
+  if (todayClass === 'Math') return 'Teaching Math';
+  else if (todayClass === 'History') return 'Teaching History';
 }

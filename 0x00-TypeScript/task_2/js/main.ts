@@ -41,6 +41,6 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
 
 type Subjects = 'Math' | 'History'
 
-export function teachClass(todayClass:Subjects) {
+export function teachClass(todayClass: Subjects): string {
   return todayClass === 'Math' ? 'Teaching Math' : 'Teaching History'
 }

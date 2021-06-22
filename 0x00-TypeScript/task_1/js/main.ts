@@ -15,6 +15,10 @@ interface PrintTeacherFunction {
   (firstName: string, lastName: string): string,
 }
 
+export const printTeacher: PrintTeacherFunction = (firstName: string, lastName: string): string => {
+  return `${firstName[0]}. ${lastName}`;
+}
+
 interface StudentClassInteface {
   firstName: string,
   lastName: string,
@@ -24,10 +28,6 @@ interface StudentClassInteface {
 
 interface StudentConstructor {
   new(firstName: string, lastName: string): StudentClassInteface,
-}
-
-export const printTeacher: PrintTeacherFunction = (firstName: string, lastName: string): string => {
-  return `${firstName[0]}. ${lastName}`;
 }
 
 export const StudentClass: StudentConstructor =  class StudentClass implements StudentClassInteface {

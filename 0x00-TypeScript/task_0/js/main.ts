@@ -8,26 +8,34 @@ interface Student {
 const studentOne: Student = {
   firstName: "Isabella",
   lastName:"Garcia",
-  age: 22,
   location: "Miami",
+  age: 22,
 };
 
 const studentTwo: Student = {
   firstName: "Valentina",
   lastName:"Alvarez",
-  age: 21,
   location: "Los Angeles",
+  age: 21,
 };
 
 const studentList: Array<Student> = [studentOne, studentTwo];
 
-const table: HTMLTableElement = document.createElement("table");
-document.body.appendChild(table);
+const table: HTMLTableElement = document.createElement('table');
 
-studentList.forEach((student) => {
-  const newRow: HTMLTableRowElement = table.insertRow();
-  const newRowFirstName: HTMLTableDataCellElement = newRow.insertCell();
-  const newRowLocation: HTMLTableDataCellElement = newRow.insertCell();
-  newRowFirstName.innerHTML = student.firstName;
-  newRowLocation.innerHTML = student.location;
-});
+// create Table header
+const head: HTMLTableSectionElement = table.createTHead();
+const row: HTMLTableRowElement = head.insertRow();
+row.innerHTML = `<th>First Name</th><th>Location</th>`;
+
+// create Table dody
+const body: HTMLTableSectionElement = table.createTBody();
+for (const student of studentList) {
+  const row: HTMLTableRowElement = body.insertRow();
+  const name: HTMLTableDataCellElement = row.insertCell();
+  const location: HTMLTableDataCellElement = row.insertCell();
+  name.innerHTML = student.firstName;
+  location.innerHTML = student.location;
+}
+
+document.body.appendChild(table);

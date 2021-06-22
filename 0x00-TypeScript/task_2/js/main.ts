@@ -30,3 +30,11 @@ export function createEmployee(salary: number | string): Director | Teacher {
   }
   return new Director()
 }
+
+export function isDirector(employee: Director | Teacher): Boolean {
+  return employee instanceof Director;
+}
+
+export function executeWork(employee: Director | Teacher): string {
+  return isDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks()
+}

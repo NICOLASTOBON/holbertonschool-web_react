@@ -28,7 +28,7 @@ const head: HTMLTableSectionElement = table.createTHead();
 const row: HTMLTableRowElement = head.insertRow();
 row.innerHTML = `<th>First Name</th><th>Location</th>`;
 
-// create Table dody
+// create Table body
 const body: HTMLTableSectionElement = table.createTBody();
 for (const student of studentList) {
   const row: HTMLTableRowElement = body.insertRow();

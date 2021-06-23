@@ -12,4 +12,5 @@ const updatedRow: RowElement = {...row, age: 23};
 CRUD.updateRow(newRowID, updatedRow);
 CRUD.deleteRow(newRowID);
 
+// ["./crud.d.ts />"]
 // ["/// <reference path =", "./crud.js"]

@@ -7,7 +7,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nicolas Alvarez Tobon",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.40.0",

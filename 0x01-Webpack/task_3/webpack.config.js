@@ -26,6 +26,12 @@ module.exports = {
     ],
   },
   plugins: [new HtmlWebpackPlugin()],
+  devtool: 'inline-source-map',
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    },
+  },
   devServer: {
     contentBase: './public',
     compress: true,

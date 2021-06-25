@@ -31,6 +31,9 @@ module.exports = {
     new CleanWebpackPlugin(),
   ],
   devtool: 'inline-source-map',
+  performance: {
+    maxAssetSize: 1000000,
+  },
   optimization: {
     splitChunks: {
       chunks: 'all'

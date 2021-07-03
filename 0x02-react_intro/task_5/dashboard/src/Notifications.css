@@ -1,0 +1,12 @@
+.Notifications {
+  border: 1px dashed var(--primary-color);
+  padding: .6rem 1rem;
+}
+
+[data-priority="default"] {
+  color: #0000ff;
+}
+
+[data-priority="urgent"] {
+  color: var(--primary-color);
+}

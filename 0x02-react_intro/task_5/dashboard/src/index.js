@@ -1,1 +1,1 @@
-console.log('Hello webpack');
+console.log('Nicolas alvarez in the best');

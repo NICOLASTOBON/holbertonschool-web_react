@@ -1,12 +1,10 @@
-const path = require("path");
+const path = require('path')
 
 module.exports = {
-  mode: 'development',
-  entry: ['./src/index.js'],
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'bundle.js',
-    clean: true
+    filename: 'bundle.js'
   },
   mode: 'development',
   module: {
@@ -22,10 +20,10 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.join(__dirname, '../dist'),
     hot: true,
+    contentBase: path.resolve('../dist'),
     compress: true,
-    port: 8564
+    port: 8564,
   },
   devtool: 'inline-source-map'
-};
+}

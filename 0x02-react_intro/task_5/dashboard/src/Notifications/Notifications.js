@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { getLatestNotification } from './utils'
-import closeImg from './dashbord/close-icon.png'
+import { getLatestNotification } from '../utils/utils'
+import closeImg from '../assets/close-icon.png'
 
 import './Notifications.css'
 

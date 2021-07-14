@@ -1,0 +1,16 @@
+.App-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid var(--primary-color);
+  text-align: center;
+}
+
+.App-footer p {
+  font-style: italic;
+}
+
+.App-body label,
+.App-body input {
+  margin-right: .6rem;
+}

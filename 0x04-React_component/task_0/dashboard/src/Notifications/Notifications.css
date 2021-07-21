@@ -1,0 +1,18 @@
+.Notifications {
+  border: 1px dashed var(--primary-color);
+  padding: .6rem 1rem;
+  float: right;
+}
+
+.menuItem {
+  padding: .6rem 0;
+  text-align: end;
+}
+
+[data-notification-type="default"] {
+  color: #0000ff;
+}
+
+[data-notification-type="urgent"] {
+  color: var(--primary-color);
+}

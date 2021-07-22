@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "../App/App.css";
 import Notifications from "../Notifications/Notifications";
 import Login from "../Login/Login";
 import Footer from "../Footer/Footer";
@@ -8,8 +7,12 @@ import CourseList from "../CourseList/CourseList";
 import PropTypes from 'prop-types';
 import { getLatestNotification } from "../utils/utils";
 
+import './App.css'
+
 export default class App extends Component {
-  constructor(props) { super(props); }
+  constructor(props) {
+    super(props);
+  }
 
   static propTypes = {
     isLoggedIn: PropTypes.bool,

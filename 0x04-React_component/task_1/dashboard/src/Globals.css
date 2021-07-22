@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #de3f4c;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+hr {
+  border-color: var(--primary-color);
+}

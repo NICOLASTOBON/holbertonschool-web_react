@@ -3,7 +3,7 @@
  */
 
 import React from "react";
-import { shallow, mount } from "enzyme";
+import { shallow } from "enzyme";
 import App from "./App";
 import Notification from "../Notifications/Notifications";
 import Header from "../Header/Header";
@@ -47,7 +47,9 @@ describe("<App />", () => {
     expect(wrapper.find(Login)).toHaveLength(0);
     expect(wrapper.find(CourseList)).toHaveLength(1);
   });
+});
 
+describe('<App /> event handlers', () => {
   it("checks behavior of logOut prop", () => {
     const map = {};
     window.addEventListener = jest.fn().mockImplementation((event, cb) => {
@@ -59,7 +61,7 @@ describe("<App />", () => {
       logOut: jest.fn()
     }
 
-    const wrapper = mount(<App isLoggedIn={true} {...testProps}/>);
+    shallow(<App isLoggedIn={true} {...testProps}/>);
     map.keydown({ ctrlKey: true, key: "h" });
     expect(window.alert).toHaveBeenCalledWith("Logging you out");
     expect(testProps.logOut).toHaveBeenCalled();

@@ -24,11 +24,11 @@ export default class App extends Component {
     logOut: () => {}
   };
 
-  componentDidMount() {
+  componentDidMount = () => {
     window.addEventListener('keydown', this.handleKeydown);
   }
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     window.removeEventListener('keydown', this.handleKeydown);
   }
 
@@ -61,7 +61,6 @@ export default class App extends Component {
         <Header />
         <hr />
         {this.props.isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
-        <hr />
         <Footer />
       </div>
     </>

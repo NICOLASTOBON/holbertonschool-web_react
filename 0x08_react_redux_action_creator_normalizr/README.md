@@ -17,4 +17,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Colson Scott** - [OctopusHugz](https://github.com/OctopusHugz)
+* **Nicolas Alvarez Tobon** - [NICOLASTOBON](https://github.com/NICOLASTOBON)
